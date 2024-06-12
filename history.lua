@@ -5,7 +5,7 @@ print(history)
 
 local history_map = history.map(function(item)
     -- return "<div><a href=\"" .. item.url "\"><p>" .. item.name .. "</p><p>" .. item.url .. "</p><p>" .. item.date .. "</p></a></div>"
-    local date = os.date("%x") == os.date("%x", (item.date / 1000 )) and os.date("%H:%M", (item.date / 1000 )) or os.date("%d/%m/%y", (item.date / 1000 ))
+    local date = os.date("%x") == os.date("%x", (item.date // 1000 )) and os.date("%H:%M", (item.date // 1000 )) or os.date("%d/%m/%y", (item.date // 1000 ))
     local string = [[
         <div class="history-item">
             <a href="%s">
