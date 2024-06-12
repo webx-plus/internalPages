@@ -19,3 +19,7 @@ theme{
 img{
     width: 200px;
 }
+
+h6 {
+    margin: 5px 0;
+}
