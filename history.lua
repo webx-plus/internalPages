@@ -9,9 +9,9 @@ local history_map = history.map(function(item)
     local string = [[
         <div class="history-item">
             <a href="%s">
-                <p>%s</p>
-                <p>%s</p>
-                <p>%s</p>
+                <p class="history-item-name">%s</p>
+                <p class="history-item-url">%s</p>
+                <p class="history-item-date">%s</p>
             </a>
         </div>
     ]]
