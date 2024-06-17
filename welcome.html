@@ -1,2 +1,36 @@
-<h1>Your bassinga version is outdated</h1>
-<p>pretty pleae update uwu :3</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>bussinga!</title>
+        <link href="index.css">
+    </head>
+    <body>
+        <img src="https://64.media.tumblr.com/3ed2fa36e8a6616c264ab9a2aeeb433b/tumblr_inline_p0xdankMqB1qmcu44_540.png">
+        <h1 class="bussinga">Bussinga!</h1>
+        <p>A <b>WebX</b> browser for everyone!</p>
+        <p>Bussinga is the next level up from Napture- built on Tauri and wasmoon, with tons of amazing new features!</p>
+        <ul>
+            <li>Tabs!</li>
+            <li>Custom DNS!</li>
+            <li>DNS Caching!</li>
+            <li>Themes!</li>
+            <li>Mostly backwards compatibile with Napture HTML, CSS & Lua!</li>
+        </ul>
+        <h4>Still to come</h4>
+        <ul>
+            <li>Developer tools</li>
+            <li>More than 1 page (index.html) per domain. Not a priority as Napture doesn't support it yet.</li>
+            <li>More compatibility, especially pages that rely on fetch(). Sites like chat.it and dingle.it work, though!</li>
+        </ul>
+        <h4>Notes for devs</h4>
+        <p><b>IMPORTANT:</b> Currently, if your app listens to a click or input event and calls "fetch" within that, please do not update any variables before you fetch! The current workaround to get the API to work involves running the function more than one, and this leads to recursion. I'm looking into a method to fix this, but for now, please update your sites.</p>
+        <br>
+        <p>Check for the bussinga browser with window.browser being set to "bussinga", or the user agent being "bussinga (like Napture)".</p>
+        <p>To take full advantage of CSS without any editing for compatibility, put "/* bussinga! */" anywhere in your CSS code. Base CSS styles will still be applied.</p>
+        <br>
+        <p>To test your local project, go to localhost://3000 or whatever port you're serving from.</p>
+        <br><br>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+/* bussinga! */
+
+.history-item {
+    margin-block: 10px;
+}
+.history-item a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+.history-item a:hover .history-item-url {
+    text-decoration: underline;
+}
+
+.history-item-name {
+    width: min(50%, 500px);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    font-weight: 800;
+    overflow: hidden;
+}
+.history-item-url {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: gray;
+    overflow: hidden;
+}
+.history-item-date {
+    margin-left: auto;
+    text-align: right;
+    font-size: 14px;
+    color: gray;
+}
